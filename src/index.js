@@ -1,8 +1,9 @@
-//import classes and modules
+//import styles, classes, modules
+import './styles.css';
 
-function test () {
-  const content = document.querySelector('#content');
-  content.textContent = 'Hey'
+function testCode () {
+  const test = document.querySelector('#test');
+  test.textContent = 'Hey'
 }
 
-test();
+testCode();
