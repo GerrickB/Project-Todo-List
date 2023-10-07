@@ -11,13 +11,17 @@
 .container {
   width: 80%;
   margin: 0 auto;
+  padding: 1rem;
   border: none;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px #94a3b8;
+  background-color: #bfdbfe;
 }
 
 header {
   padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #93c5fd;
+  margin-bottom: 1.5rem;
+  background-color: #ffffff;
   
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -52,4 +56,27 @@ header .right-part {
   justify-content: end;
   align-items: center;
   gap: 1rem;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.todo-container {
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #93c5fd;
+  background-color: #ffffff;
+
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.add-section-button {
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #93c5fd;
+  background-color: #ffffff;
 }
