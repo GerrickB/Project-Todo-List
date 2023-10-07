@@ -25,6 +25,7 @@ function loadHeader() {
   const accountIcon = document.createElement('img');
   accountIcon.src = Account;
 
+  container.appendChild(header);
   header.appendChild(leftPart);
   leftPart.appendChild(menuIcon);
   leftPart.appendChild(homeIcon);
@@ -32,8 +33,6 @@ function loadHeader() {
   header.appendChild(rightPart);
   rightPart.appendChild(bellIcon);
   rightPart.appendChild(accountIcon);
-
-  container.appendChild(header);
 } 
 
 export default loadHeader;
