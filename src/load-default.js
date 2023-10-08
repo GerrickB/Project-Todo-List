@@ -1,4 +1,4 @@
-
+import loadForm from './load-form.js'
 
 function loadDefault() {
   const container = document.querySelector('.container')
@@ -13,7 +13,11 @@ function loadDefault() {
   h3.textContent = 'To do';
 
   const addTask = document.createElement('button');
+  addTask.classList.add('add-task')
   addTask.textContent = '+ Add task';
+  addTask.addEventListener("click", () => {
+    loadForm();
+  });
 
   const addSection = document.createElement('button');
   addSection.classList.add('add-section-button');
