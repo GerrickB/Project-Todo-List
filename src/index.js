@@ -3,13 +3,6 @@ import './styles.css';
 import loadHeader from './load-header.js';
 import loadDefault from './load-default.js';
 
-// function testCode () {
-//   const test = document.querySelector('#test');
-//   test.textContent = 'Hey'
-// }
-
-//testCode();
-
 function startup() {
   loadHeader();
   loadDefault();
@@ -17,3 +10,4 @@ function startup() {
 }
 
 startup();
+//import todo-holder here
