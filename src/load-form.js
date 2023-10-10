@@ -48,10 +48,9 @@ function createSelect(form, labelName, id, options) {
   form.appendChild(formItem);
 }
 
-function loadForm() {
+function loadForm(todoHolder) {
   // cancel and submit form reloads add task button
-  const addTask = document.querySelector('.add-task');
-  addTask.remove();
+  document.querySelector('.add-task').remove();
   
   // create form
   const form = document.createElement('form');
@@ -82,6 +81,7 @@ function loadForm() {
 
     const newTodo = new TodoItem(title, description, dueDate, priority);
     console.log(newTodo);
+    todoHolder.addTodo(newTodo);
 
     // append after form submission
     const addTask = document.createElement('button');

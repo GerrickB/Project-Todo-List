@@ -1,5 +1,4 @@
 
-
 // use this class to store
 class TodoHolder {
   constructor(name) {
@@ -15,3 +14,5 @@ class TodoHolder {
     }
   }
 }
+
+export default TodoHolder;

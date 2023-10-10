@@ -1,6 +1,6 @@
 import loadForm from './load-form.js'
 
-function loadDefault() {
+function loadDefault(todoHolder) {
   const container = document.querySelector('.container')
 
   const projectContainer = document.createElement('div');
@@ -16,7 +16,7 @@ function loadDefault() {
   addTask.classList.add('add-task')
   addTask.textContent = '+ Add task';
   addTask.addEventListener("click", () => {
-    loadForm();
+    loadForm(todoHolder);
   });
 
   const addSection = document.createElement('button');
