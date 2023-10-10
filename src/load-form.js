@@ -1,5 +1,5 @@
 import TodoItem from './todo-item.js';
-
+import displayTodo from './display-todo.js';
 
 // Function to create and append an input element
 function createInput(form, labelName, type, id, required = false) {
@@ -81,14 +81,18 @@ function loadForm(todoHolder) {
 
     const newTodo = new TodoItem(title, description, dueDate, priority);
     console.log(newTodo);
+
     todoHolder.addTodo(newTodo);
+    console.log(todoHolder);
+
+    displayTodo(todoHolder);
 
     // append after form submission
     const addTask = document.createElement('button');
     addTask.classList.add('add-task')
     addTask.textContent = '+ Add task';
     addTask.addEventListener("click", () => {
-      loadForm();
+      loadForm(todoHolder);
     });
     document.querySelector('.todo-container').appendChild(addTask);
     form.remove();

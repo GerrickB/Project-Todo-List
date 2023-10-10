@@ -1,3 +1,4 @@
+import TodoItem from "./todo-item.js";
 
 // use this class to store
 class TodoHolder {
@@ -6,7 +7,7 @@ class TodoHolder {
     this.todos = [];
   }
 
-  addTodo(todoItems) {
+  addTodo(todoItem) {
     if (todoItem instanceof TodoItem) {
       this.todos.push(todoItem); 
     } else {
