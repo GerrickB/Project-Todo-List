@@ -1,6 +1,4 @@
-
-function displayTodo(todoHolder) {
-  //refresh technique
+function refreshDisplay() {
   const containers = document.querySelectorAll('.sub-container');
 
   // Loop through the NodeList and remove each container
@@ -9,6 +7,10 @@ function displayTodo(todoHolder) {
         container.remove();
     });
   }
+}
+
+function displayTodo(todoHolder) {
+  refreshDisplay();
 
   const todoContainer = document.querySelector('.todo-container');
 
